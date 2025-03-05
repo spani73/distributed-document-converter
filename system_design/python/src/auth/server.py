@@ -10,7 +10,7 @@ server.config["MYSQL_HOST"] = os.environ.get("MYSQL_HOST")
 server.config["MYSQL_USER"] = os.environ.get("MYSQL_USER")
 server.config["MYSQL_PASSWORD"] = os.environ.get("MYSQL_PASSWORD")
 server.config["MYSQL_DB"] = os.environ.get("MYSQL_DB")
-server.config["MYSQL_PORT"] = os.environ.get("MYSQL_PORT")
+server.config["MYSQL_PORT"] = int(os.environ.get("MYSQL_PORT"))
 
 @server.route("/login", methods=["POST"])
 def login():
@@ -47,7 +47,6 @@ def verifyJWT():
     encoded_jwt = encoded_jwt.split(" ")[1]
     try:
         decoded = jwt.decode(encoded_jwt, os.environ.get("JWT_SECRET"), algorithms=["HS256"])
-        return "valid token", 200
     except:
         return "not authorized", 401
     
@@ -62,7 +61,7 @@ def createJWT(username, secret, authz):
             "iat": datetime.datetime.utcnow(),
             "admin" : authz,
         },
-        secret,
+        str(secret),  # Ensure secret is a string
         algorithm="HS256",
     )
     
