@@ -45,8 +45,11 @@ This project addresses the issue of blue light exposure from reading PDFs with w
 ### Download Endpoint To Receive the Converted Document : 
 ![Download Endpoint response with converted pdf](https://github.com/user-attachments/assets/cf86ca4e-f9d4-446c-a6cf-fa279997c4e7)
 
+# Steps to Run
 
-
+* minikube tunnel -> creates a network route on the host to the service using the cluster's IP address as a gateway
+* kubectl apply -f ./ -> To start the kubernetes pods. Do this in the manifests folder.
+* kubectl delete -f ./ -> To delete the existing pods.
 
 # Getting Started
 To contribute or deploy this project, follow these steps:
