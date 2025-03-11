@@ -29,6 +29,18 @@ This project addresses the issue of blue light exposure from reading PDFs with w
 
 ![Kubernetes Pods](https://github.com/user-attachments/assets/aeadd9f3-37b0-4123-8968-aa869a850857)
 
+![Auth Endpoint Response](https://github.com/user-attachments/assets/9cf28031-a141-4ab5-ae96-377b694fca33)
+
+![Document Before Conversion](https://github.com/user-attachments/assets/2ae70b0c-2d25-49cc-bb9c-129a062141ee)
+
+![Upload Endpoint Response](https://github.com/user-attachments/assets/1b4fc617-a02a-4a58-86d8-665ac0fdaedd)
+
+![Email Notification once the conversion is completed](https://github.com/user-attachments/assets/087520cd-0967-42e9-a398-2cba1cfb81c0)
+
+![Download Endpoint response with converted pdf](https://github.com/user-attachments/assets/cf86ca4e-f9d4-446c-a6cf-fa279997c4e7)
+
+
+
 
 # Getting Started
 To contribute or deploy this project, follow these steps:
