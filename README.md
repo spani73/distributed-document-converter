@@ -25,6 +25,11 @@ This project addresses the issue of blue light exposure from reading PDFs with w
 
 * Container Orchestration: Kubernetes manages and automates deployment, scaling, and maintenance of containers.
 
+# Demo
+
+![Kubernetes Pods](https://github.com/user-attachments/assets/aeadd9f3-37b0-4123-8968-aa869a850857)
+
+
 # Getting Started
 To contribute or deploy this project, follow these steps:
 
